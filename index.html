@@ -1,15 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BRnUnlrp.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.DfjS1kvf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BsJ8MMmb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.CG4Rx-3x.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.B4NdRzvx.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.rY8UIw6N.js">
+	</head>
+	<body data-sveltekit-preload-data="hover" style="margin: 0">
+		<div style="display: content">
+			<script>
+				{
+					__sveltekit_1v1bj16 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Notes web app</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-</head>
+					const element = document.currentScript.parentElement;
 
-
-<body>
-    boing
+					Promise.all([
+						import("./_app/immutable/entry/start.BRnUnlrp.js"),
+						import("./_app/immutable/entry/app.B4NdRzvx.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
